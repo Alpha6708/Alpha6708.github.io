@@ -2,10 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Alpha6708’s Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alpha Cargo Inc</title>
+  <style>
+    /* Reset & base */
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+
+    /* Banner */
+    header {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 { font-size: 2rem; }
+
+    /* Layout container */
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* Section headings */
+    h2 {
+      margin-bottom: 0.5rem;
+      color: #004080;
+    }
+    
+    /* Contact form */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form label {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    form input,
+    form textarea {
+      margin-top: 0.5rem;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      font-size: 1rem;
+    }
+    form button {
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 4px;
+      background: #004080;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #003060;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f4f4f4;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello from GitHub Pages!</h1>
-  <p>This is my single-page free website.</p>
+
+  <!-- Banner -->
+  <header>
+    <h1>Alpha Cargo Inc</h1>
+  </header>
+
+  <div class="container">
+    
+    <!-- Contact Form -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <!-- Replace the action URL with your form endpoint or service -->
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Optional extra section -->
+    <section id="about" style="margin-top:3rem;">
+      <h2>About Alpha Cargo</h2>
+      <p>
+        Alpha Cargo Inc is your trusted partner for freight and logistics solutions.  
+        We deliver excellence, reliability, and speed—ensuring your cargo arrives  
+        safely and on time, every time.
+      </p>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Alpha Cargo Inc. All rights reserved.
+  </footer>
+
 </body>
 </html>
+
