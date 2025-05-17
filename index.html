@@ -16,7 +16,7 @@
       text-align: center;
       padding: 2rem 1rem;
     }
-    header h1 { font-size: 2rem; }
+    header h1 { font-size: 2.5rem; }
 
     /* Layout container */
     .container {
@@ -29,6 +29,8 @@
     h2 {
       margin-bottom: 0.5rem;
       color: #004080;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 0.25rem;
     }
     
     /* Contact form */
@@ -63,6 +65,15 @@
       background: #003060;
     }
 
+    /* Services list */
+    .services ul {
+      list-style: disc inside;
+      margin-top: 1rem;
+    }
+    .services li {
+      margin-bottom: 0.5rem;
+    }
+
     /* Footer */
     footer {
       text-align: center;
@@ -83,8 +94,18 @@
 
   <div class="container">
     
+    <!-- Services -->
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Freight & Logistics Solutions</li>
+        <li>Driver Training Programs</li>
+        <li>Warehousing & Distribution</li>
+      </ul>
+    </section>
+
     <!-- Contact Form -->
-    <section id="contact">
+    <section id="contact" style="margin-top:2rem;">
       <h2>Contact Us</h2>
       <!-- Replace the action URL with your form endpoint or service -->
       <form action="https://formspree.io/f/your-form-id" method="POST">
@@ -101,12 +122,12 @@
       </form>
     </section>
 
-    <!-- Optional extra section -->
+    <!-- About -->
     <section id="about" style="margin-top:3rem;">
       <h2>About Alpha Cargo</h2>
       <p>
-        Alpha Cargo Inc is your trusted partner for freight and logistics solutions.  
-        We deliver excellence, reliability, and speed—ensuring your cargo arrives  
+        Alpha Cargo Inc is your trusted partner for freight and logistics solutions.
+        We deliver excellence, reliability, and speed—ensuring your cargo arrives
         safely and on time, every time.
       </p>
     </section>
@@ -120,4 +141,3 @@
 
 </body>
 </html>
-
